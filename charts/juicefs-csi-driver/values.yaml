@@ -37,6 +37,9 @@ kubeletDir: /var/lib/kubelet
 jfsMountDir: /var/lib/juicefs/volume
 jfsConfigDir: /var/lib/juicefs/config
 
+# -- Redis Sentinel password
+redisSentinelPassword: ""
+
 dnsPolicy: ClusterFirstWithHostNet
 dnsConfig:
   {}
