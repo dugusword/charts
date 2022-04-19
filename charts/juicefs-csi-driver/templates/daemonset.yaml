@@ -59,6 +59,8 @@ spec:
           value: {{ .Values.jfsMountDir }}
         - name: JUICEFS_CONFIG_PATH
           value: {{ .Values.jfsConfigDir }}
+        - name: SENTINEL_PASSWORD
+          value: {{ .Values.redisSentinelPassword }}
         livenessProbe:
           failureThreshold: 5
           httpGet:
